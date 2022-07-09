@@ -4,6 +4,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
 import Paper from '@mui/material/Paper';
+import { Divider, Typography } from '@mui/material';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import BedOutlinedIcon from '@mui/icons-material/BedOutlined';
+import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
+import CropSquareOutlinedIcon from '@mui/icons-material/CropSquareOutlined';
 const AuthWrapper = ({children}) => {
   return (
     <Box
@@ -27,7 +32,7 @@ const AuthWrapper = ({children}) => {
       >
         <Box
           sx={{
-            width: {xs: '100%', sm: '50%', lg: '40%'},
+            width: {xs: '100%', sm: '50%', lg: '50%'},
             padding: {xs: 5, lg: 10},
             display: 'flex',
             flexDirection: 'column',
@@ -38,7 +43,7 @@ const AuthWrapper = ({children}) => {
         </Box>
         <Box
           sx={{
-            width: {xs: '100%', sm: '50%', lg: '60%'},
+            width: {xs: '100%', sm: '50%', lg: '50%'},
             position: 'relative',
             padding: {xs: 5, lg: 10},
             display: {xs: 'none', sm: 'flex'},
@@ -74,6 +79,37 @@ const AuthWrapper = ({children}) => {
                 }}
                 >
                 </img>
+                <Box sx={{
+                  display: 'flex',
+                }}>
+                  <Box sx={{
+                    width: '80%'
+                  }}>
+                    <Typography>Beverly Springfield</Typography>
+                    <Typography>2821 Sevilla, Palm Harbor, TX</Typography>
+                  </Box>
+                  <Box>
+                    <FavoriteBorderOutlinedIcon></FavoriteBorderOutlinedIcon>
+                  </Box>
+                </Box>
+                <Divider></Divider>
+                <Box sx={{
+                  display: 'inline-flex',
+                  fontSize: '15px'
+                }}>
+                  <BedOutlinedIcon sx={{
+                    fontSize : '15px'
+                  }}></BedOutlinedIcon>4 Beds
+                  <BathtubOutlinedIcon sx={{
+                    fontSize : '15px'
+                  }}></BathtubOutlinedIcon>2 Bathrooms
+                  <CropSquareOutlinedIcon sx={{
+                    fontSize : '15px'
+                  }}></CropSquareOutlinedIcon>6x7,5m
+                </Box>
+                <Box>
+                  ANSI
+                </Box>
               </CardMedia>
             </Paper>
           </Box>
