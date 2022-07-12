@@ -8,11 +8,13 @@ const MainContent = ({children, ...rest}) => {
       sx={{
         flex: 1,
         display: 'flex',
-        ml: {lg: '280px'},
-        width: {xs: '100%', lg: `calc(100% - 280px)`},
+        // ml: {lg: '280px'},
+        // width: {xs: '100%', lg: `calc(100% - 280px)`},
+        width: '100%',
         flexDirection: 'column',
         position: 'relative',
         transition: 'all 0.5s ease',
+        margin: '0px'
       }}
       className='mainContent'
       {...rest}

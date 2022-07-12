@@ -766,5 +766,10 @@
   "customizer.sidebarMenuStyle": "Menu Style",
   "wall.groupCall": "Group Call",
   "wall.videoCall": "Video Call",
-  "wall.likeTeam": "Like Team"
+  "wall.likeTeam": "Like Team",
+  "crema.rent": "Rent",
+  "crema.buy": "Buy",
+  "crema.sell": "Sell",
+  "crema.properties": "Manage Property",
+  "crema.resource": "Resource"
 }

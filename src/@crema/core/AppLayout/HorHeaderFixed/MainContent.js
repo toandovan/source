@@ -18,6 +18,7 @@ const MainContent = ({children, ...rest}) => {
           maxWidth: {lg: 1140, xl: 1420},
           mx: 'auto',
         },
+        backgroundImage: 'linear-gradient(#f2f2f2, #ffffff)'
       }}
       className='mainContent'
       {...rest}

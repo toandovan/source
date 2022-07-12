@@ -15,6 +15,8 @@ import {thirdPartyConfigs} from './thirdParty';
 import {appsConfig} from './apps';
 import {accountPagesConfigs} from './account';
 
+import {propertiesConfigs} from './propertiesListing';
+
 const authorizedStructure = {
   fallbackPath: '/signin',
   unAuthorizedComponent: <Error403 />,
@@ -28,6 +30,7 @@ const authorizedStructure = {
     ...muiComponentConfigs,
     ...userPagesConfig,
     ...userListConfig,
+    ...propertiesConfigs,
   ],
 };
 

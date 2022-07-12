@@ -8,7 +8,7 @@ import AppThemeSetting from '../../AppThemeSetting';
 import DefaultLayoutWrapper from './DefaultLayoutWrapper';
 import MainContent from './MainContent';
 import {LayoutType} from 'shared/constants/AppEnums';
-import AppSidebar from './AppSidebar';
+// import AppSidebar from './AppSidebar';
 import DefaultLayoutContainer from './DefaultLayoutContainer';
 
 const DefaultLayout = () => {
@@ -28,7 +28,7 @@ const DefaultLayout = () => {
           appMainFixedHeader: headerType === 'fixed',
         })}
       >
-        <AppSidebar />
+        {/* <AppSidebar /> */}
 
         <MainContent>
           <AppHeader />

@@ -24,6 +24,7 @@ const AppLogo = () => {
       className='app-logo'
     >
       <Logo fill={theme.palette.primary.main} />
+      {/* <img src='/assets/images/logo.png'></img> */}
       <Box
         sx={{
           mt: 1,
