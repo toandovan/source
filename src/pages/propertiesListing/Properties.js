@@ -18,11 +18,11 @@ import AppSearchBar from '@crema/core/AppSearchBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import CardMedia from '@mui/material/CardMedia';
-import { Button, Divider, Input } from '@mui/material';
-import AppCardMedia from '@crema/core/AppCard/AppCardMedia';
+import { Button, Card, CardContent, Divider, Input } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Badge from '@mui/material/Badge';
 import TextField from '@mui/material/TextField';
+import './index.css';
 const SmallAvatar = styled(Avatar)(({ theme }) => ({
     width: 22,
     height: 22,
@@ -113,13 +113,16 @@ const PropertiesListing= ()=>{
                     <Grid item container xs={12} md={6} sx={{paddingTop: '25px'}}>
                         <Grid item xs={6} md={6}>
                             <Badge
+                                sx={{
+                                    padding: '2px', border: '1px solid', borderRadius: '100px', borderColor: 'rgba(224, 222, 247, 1)'
+                                }}
                                 overlap="circular"
                                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                                 badgeContent={
                                 <SmallAvatar alt="Remy Sharp"/>
                                 }
                             >
-                                <Avatar>
+                                <Avatar sx={{ width: 65, height: 65 , }}>
                                     <GroupsOutlinedIcon/>
                                 </Avatar>
                             </Badge>
@@ -128,13 +131,16 @@ const PropertiesListing= ()=>{
                         </Grid>
                         <Grid item xs={6} md={6}>
                         <Badge
-                                overlap="circular"
-                                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                                badgeContent={
-                                <SmallAvatar alt="Remy Sharp"/>
-                                }
+                            sx={{
+                                padding: '2px', border: '1px solid', borderRadius: '100px', borderColor: 'rgba(224, 222, 247, 1)'
+                            }}
+                            overlap="circular"
+                            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                            badgeContent={
+                            <SmallAvatar alt="Remy Sharp"/>
+                            }
                             >
-                                <Avatar>
+                                <Avatar sx={{ width: 65, height: 65 , }}>
                                     <ApartmentOutlinedIcon></ApartmentOutlinedIcon>
                                 </Avatar>
                             </Badge>
@@ -151,22 +157,27 @@ const PropertiesListing= ()=>{
                     padding: '30px'
                 }}>
                         <CardMedia sx={{
-                        borderStyle: 'solid',
-                        minHeight: '400px',
-                        border: '1px solid',
-                        borderRadius: '10px',
-                        padding: '30px',
+                            borderStyle: 'solid',
+                            minHeight: '600px',
+                            border: '1px solid',
+                            borderRadius: '10px',
+                            padding: '30px',
+                            backgroundColor: 'rgba(224, 222, 247, 1)',
+                            backgroundImage: `url('/assets/images/g12.png')`,
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'bottom right',
+                            backgroundSize: '80% 60%',
                         }}>
                             <Box sx={{display: 'flex'}}>
-                            <Box sx={{width: '80%'}}>
-                                <Typography sx={{fontWeight: 'bold', fontSize: 20}}>
-                                The new way to find your new home
-                                </Typography>
-                                <Typography sx={{margin: '20px 0 20px 0'}}>
-                                Find your dream place to live in with more than 10k+
-                                properties listed.
-                                </Typography>
-                            </Box>
+                                <Box sx={{width: '80%'}}>
+                                    <Typography sx={{fontWeight: 'bold', fontSize: 20}}>
+                                        The new way to find your new home
+                                    </Typography>
+                                    <Typography sx={{margin: '20px 0 20px 0'}}>
+                                    Find your dream place to live in with more than 10k+
+                                    properties listed.
+                                    </Typography>
+                                </Box>
                             </Box>
                             <Box
                             sx={{
@@ -185,8 +196,21 @@ const PropertiesListing= ()=>{
                 }}>
                         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                             <Grid item xs={6}>
-                                <MapsHomeWorkOutlinedIcon></MapsHomeWorkOutlinedIcon>
-                                <Typography sx={{fontWeight: 'bold', fontSize: 16}}>
+                                <Badge
+                                    sx={{
+                                        padding: '2px', border: '1px solid', borderRadius: '100px', borderColor: 'rgba(224, 222, 247, 1)'
+                                    }}
+                                    overlap="circular"
+                                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                                    badgeContent={
+                                    <SmallAvatar alt="Remy Sharp"/>
+                                    }
+                                >
+                                    <Avatar sx={{ width: 65, height: 65 , }}>
+                                        <MapsHomeWorkOutlinedIcon fontSize='large'></MapsHomeWorkOutlinedIcon>
+                                    </Avatar>
+                                </Badge>
+                                <Typography sx={{fontWeight: 'bold', fontSize: 25}}>
                                     Property Insurance
                                 </Typography>
                                 <Typography>
@@ -194,8 +218,21 @@ const PropertiesListing= ()=>{
                                 </Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <LocalAtmIcon></LocalAtmIcon>
-                                <Typography sx={{fontWeight: 'bold', fontSize: 16}}>
+                                <Badge
+                                    sx={{
+                                        padding: '2px', border: '1px solid', borderRadius: '100px', borderColor: 'rgba(224, 222, 247, 1)'
+                                    }}
+                                    overlap="circular"
+                                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                                    badgeContent={
+                                    <SmallAvatar alt="Remy Sharp"/>
+                                    }
+                                >
+                                    <Avatar sx={{ width: 65, height: 65 }}>
+                                        <LocalAtmIcon fontSize='large'></LocalAtmIcon>
+                                    </Avatar>
+                                </Badge>
+                                <Typography sx={{fontWeight: 'bold', fontSize: 25}} >
                                     Best Price
                                 </Typography>
                                 <Typography>
@@ -203,8 +240,21 @@ const PropertiesListing= ()=>{
                                 </Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <ArrowCircleDownIcon></ArrowCircleDownIcon>
-                                <Typography sx={{fontWeight: 'bold', fontSize: 16}}>
+                                <Badge
+                                    sx={{
+                                        padding: '2px', border: '1px solid', borderRadius: '100px', borderColor: 'rgba(224, 222, 247, 1)'
+                                    }}
+                                    overlap="circular"
+                                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                                    badgeContent={
+                                    <SmallAvatar alt="Remy Sharp"/>
+                                    }
+                                >
+                                    <Avatar sx={{ width: 65, height: 65 }}>
+                                        <ArrowCircleDownIcon fontSize='large'></ArrowCircleDownIcon>
+                                    </Avatar>
+                                </Badge>
+                                <Typography sx={{fontWeight: 'bold', fontSize: 25}} >
                                     Lowest Commission
                                 </Typography>
                                 <Typography>
@@ -212,8 +262,21 @@ const PropertiesListing= ()=>{
                                 </Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <LocationOnIcon></LocationOnIcon>
-                                <Typography sx={{fontWeight: 'bold', fontSize: 16}}>
+                                <Badge
+                                    sx={{
+                                        padding: '2px', border: '1px solid', borderRadius: '100px', borderColor: 'rgba(224, 222, 247, 1)'
+                                    }}
+                                    overlap="circular"
+                                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                                    badgeContent={
+                                    <SmallAvatar alt="Remy Sharp"/>
+                                    }
+                                >
+                                    <Avatar sx={{ width: 65, height: 65 }}>
+                                    <LocationOnIcon fontSize='large'></LocationOnIcon>
+                                    </Avatar>
+                                </Badge>
+                                <Typography sx={{fontWeight: 'bold', fontSize: 25}}>
                                     Overall Control
                                 </Typography>
                                 <Typography>
@@ -267,24 +330,151 @@ const PropertiesListing= ()=>{
                         <AppSearchBar iconPosition='right' placeholder='Search…' />
                     </Grid>
                 </Grid>
-                <Grid container>
+                <Grid container className='testtest'>
                             <Grid item xs={2} md={4} lg={4}>
-                                <AppCardMedia></AppCardMedia>
+                                <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                                    <CardMedia
+                                        component="img"
+                                        alt="green iguana"
+                                        height="140"
+                                        image="./assets/images/test1.png"
+                                        sx={{
+                                            borderTopLeftRadius: '20px',
+                                            borderTopRightRadius: '20px'
+                                        }}
+                                    />
+                                    <h1 className='ribbon'>popular</h1>
+                                    <CardContent >
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Lizard
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                                            species, ranging across all continents except Antarctica
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                                
                             </Grid>
                             <Grid item xs={2} md={4} lg={4}>
-                                <AppCardMedia></AppCardMedia>
+                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                                    <CardMedia
+                                        component="img"
+                                        alt="green iguana"
+                                        height="140"
+                                        image="./assets/images/test2.png"
+                                        sx={{
+                                            borderTopLeftRadius: '20px',
+                                            borderTopRightRadius: '20px'
+                                        }}
+                                    />
+                                    <h1 className='ribbon'>popular</h1>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Lizard
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                                            species, ranging across all continents except Antarctica
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>
                             <Grid item xs={2} md={4} lg={4}>
-                                <AppCardMedia></AppCardMedia>
+                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                                    <CardMedia
+                                        component="img"
+                                        alt="green iguana"
+                                        height="140"
+                                        image="./assets/images/test3.png"
+                                        sx={{
+                                            borderTopLeftRadius: '20px',
+                                            borderTopRightRadius: '20px'
+                                        }}
+                                    />
+                                    <h1 className='ribbon'>popular</h1>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Lizard
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                                            species, ranging across all continents except Antarctica
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>
                             <Grid item xs={2} md={4} lg={4}>
-                                <AppCardMedia></AppCardMedia>   
+                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible', }}>
+                                    <CardMedia
+                                        component="img"
+                                        alt="green iguana"
+                                        height="140"
+                                        image="./assets/images/test4.png"
+                                        sx={{
+                                            borderTopLeftRadius: '20px',
+                                            borderTopRightRadius: '20px'
+                                        }}
+                                    />
+                                    <h1 className='ribbon'>popular</h1>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Lizard
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                                            species, ranging across all continents except Antarctica
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>
                             <Grid item xs={2} md={4} lg={4}>
-                                <AppCardMedia></AppCardMedia>
+                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                                    <CardMedia
+                                        component="img"
+                                        alt="green iguana"
+                                        height="140"
+                                        image="./assets/images/test5.png"
+                                        sx={{
+                                            borderTopLeftRadius: '20px',
+                                            borderTopRightRadius: '20px'
+                                        }}
+                                    />
+                                    <h1 className='ribbon'>popular</h1>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Lizard
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                                            species, ranging across all continents except Antarctica
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>
                             <Grid item xs={2} md={4} lg={4}>
-                                <AppCardMedia></AppCardMedia>
+                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible',}}>
+                                    <CardMedia
+                                        component="img"
+                                        alt="green iguana"
+                                        height="140"
+                                        image="./assets/images/test6.png"
+                                        sx={{
+                                            borderTopLeftRadius: '20px',
+                                            borderTopRightRadius: '20px'
+                                        }}
+                                    />
+                                    <h1 className='ribbon'>popular</h1>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Lizard
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                                            species, ranging across all continents except Antarctica
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>        
                 </Grid>
                 <Grid xs={12} md={12} llg={12} align="center" sx={{
