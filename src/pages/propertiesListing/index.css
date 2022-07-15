@@ -53,11 +53,12 @@
   .ribbon:before, .ribbon:after{
     font-size: 0.714em;
   }
+  .testtest::-webkit-scrollbar {    display: none;}
   .testtest{
-    /* overflow-x: auto; */
     white-space: nowrap;
     display: flex;
     flex-direction:row;
-    flex-wrap:nowrap;
-    } 
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+  } 
 }

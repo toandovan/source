@@ -331,8 +331,8 @@ const PropertiesListing= ()=>{
                     </Grid>
                 </Grid>
                 <Grid container className='testtest'>
-                            <Grid item xs={2} md={4} lg={4}>
-                                <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                            <Grid item xs={8} md={4} lg={4} sx={{flexShrink: 0}}>
+                                <Card sx={{ margin: '40px', minHeight: '400px'}}>
                                     <CardMedia
                                         component="img"
                                         alt="green iguana"
@@ -356,8 +356,8 @@ const PropertiesListing= ()=>{
                                 </Card>
                                 
                             </Grid>
-                            <Grid item xs={2} md={4} lg={4}>
-                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                            <Grid item xs={8} md={4} lg={4} sx={{flexShrink: 0}}>
+                            <Card sx={{ margin: '40px', minHeight: '400px'}}>
                                     <CardMedia
                                         component="img"
                                         alt="green iguana"
@@ -380,8 +380,8 @@ const PropertiesListing= ()=>{
                                     </CardContent>
                                 </Card>
                             </Grid>
-                            <Grid item xs={2} md={4} lg={4}>
-                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                            <Grid item xs={8} md={4} lg={4} sx={{flexShrink: 0}} >
+                            <Card sx={{ margin: '40px', minHeight: '400px'}}>
                                     <CardMedia
                                         component="img"
                                         alt="green iguana"
@@ -404,8 +404,8 @@ const PropertiesListing= ()=>{
                                     </CardContent>
                                 </Card>
                             </Grid>
-                            <Grid item xs={2} md={4} lg={4}>
-                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible', }}>
+                            <Grid item xs={8} md={4} lg={4} sx={{flexShrink: 0}}>
+                            <Card sx={{ margin: '40px', minHeight: '400px' }}>
                                     <CardMedia
                                         component="img"
                                         alt="green iguana"
@@ -428,8 +428,8 @@ const PropertiesListing= ()=>{
                                     </CardContent>
                                 </Card>
                             </Grid>
-                            <Grid item xs={2} md={4} lg={4}>
-                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible'}}>
+                            <Grid item xs={8} md={4} lg={4} sx={{flexShrink: 0}}>
+                            <Card sx={{ margin: '40px', minHeight: '400px'}}>
                                     <CardMedia
                                         component="img"
                                         alt="green iguana"
@@ -452,8 +452,8 @@ const PropertiesListing= ()=>{
                                     </CardContent>
                                 </Card>
                             </Grid>
-                            <Grid item xs={2} md={4} lg={4}>
-                            <Card sx={{ margin: '40px', minHeight: '400px', overflow: 'visible',}}>
+                            <Grid item xs={8} md={4} lg={4} sx={{flexShrink: 0}}>
+                                <Card sx={{ margin: '40px', minHeight: '400px'}}>
                                     <CardMedia
                                         component="img"
                                         alt="green iguana"
